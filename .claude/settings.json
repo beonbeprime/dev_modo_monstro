@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$PROJECT_DIR\" && git pull origin main --rebase 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}
